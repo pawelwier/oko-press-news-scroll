@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import NewsItem from './NewsItem'
+import NavigationBar from './NavigationBar'
 import data from '../data.json'
 import '../index.css'
 
@@ -50,6 +51,7 @@ const setChannelListLoading = (value) => {
 
   return (
     <>
+    <NavigationBar />
     <div className="main">
       <div className="article-pool">
       {displayedPosts && displayedPosts.map((news) => (
