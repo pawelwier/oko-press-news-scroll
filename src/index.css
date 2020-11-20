@@ -1,38 +1,107 @@
-.App {
+body {
+  margin: 30px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+p {
+  color: black;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  border: none;
+  border-bottom:  #9e1c1c solid 3px;
+  border-radius: 0%;
+  margin-bottom: 2em;
+  width: 52em;
+}
+
+.article-pool {
+  /* margin-right: 16em; */
+}
+
+.article-title {
+  color: #9e1c1c;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.card:hover {
+  background-color: #e6e6e6;
+}
+
+.article-date {
+  font-family: libre baskerville Georgia sans-serif;
+  color: #9e1c1c;
+  text-align: right;
+}
+
+.article-text {
+  margin-bottom: 2em;
+}
+
+.article-img {
+  width: 40%;
+  height: 40%;
+  margin: 2em;
+}
+
+.support-item {
+  background-color: #9e1c1c;
+  width: 34.7em;
+  font-size: 1.5em;
+  color: #fff;
+  display: flex;
+  padding: 1em;
+  justify-content: space-between;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.support-link {
+  background-color: #fff;
+  color: #9e1c1c;
+  font-weight: 600;
+  padding: 3px 40px;
+  display: inline-block;
+  margin-top: 20px;
+  width: 10em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.support-link:hover {
+  transform: scale(.95);
+  color: #9e1c1c;
+}
+
+.oko-logo {
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  /* filter: blur(7px) brightness(80%); */
+  opacity: 0.2;
+}
+
+#spinner {
+  margin-top: -150px;
+  font-size: 25em;
+  color: #9e1c1c;
+  visibility: hidden;
+}
+
+@media(max-width: 700px) {
+  .article-img {
+    display: none;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .card {
+    width: fit-content;
   }
-  to {
-    transform: rotate(360deg);
+  .support-item {
+    width: fit-content;
   }
 }
